@@ -15,11 +15,29 @@
   padding: 0;
 }
 
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+/*Layout  */
+.Container {
+  margin: 0 auto;
+  background-color: bisque;
+}
+
+/*Smart Phone Portrait >>>>>>>>>>>>*/
+
 /*Smart Phone Landscape*/
 
 @media (min-width: 576px){
   body{
     background-color: #0ff;
+  }
+  .Container {
+    max-width: 540px;
   }
 }
 
@@ -28,6 +46,9 @@
   body {
     background-color: #ff0;
   }
+    .Container {
+      max-width: 720px;
+    }
 }
 
 /*Tablet Landscape*/
@@ -35,10 +56,16 @@
   body{
     background-color: orangered;
   }
+    .Container {
+      max-width: 960px;
+    }
 }
 
 /*PC */
 @media(min-width:1200px){
   body{background-color: #f00;
   }
+    .Container {
+      max-width: 1140px;
+    }
 }
