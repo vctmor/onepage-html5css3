@@ -28,6 +28,13 @@ body {
   background-color: bisque;
 }
 
+/* Ao topo do site */
+#topo {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
 /*Smart Phone Portrait >>>>>>>>>>>>*/
 
 /*Smart Phone Landscape*/
