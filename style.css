@@ -25,31 +25,29 @@ body {
 /*Layout  */
 .Container {
   margin: 0 auto;
-  border: 1px solid;
-  
-  border-color:  black;
-  
-  
-  
+    border: 1px solid;
+    
+      border-color: black;
+
 }
 
-.Flex{
+.Flex {
   display: flex;
-  justify-content: space-between;
-  background-color:  #a9a9a9;
+    justify-content: space-between;
+    background-color: #a9a9a9;
 }
 
 /* Botão */
 .Botao {
   text-decoration: none;
-  color:white;
+  color: white;
   font-size: 1.3em;
   font-weight: 700;
   background-color: #c00000;
-  padding:10px 40px;
+  padding: 10px 40px;
   border: 2px solid white;
   border-radius: 25px;
-  
+
 }
 
 /* Ao topo do site */
@@ -61,7 +59,7 @@ body {
 
 /*Smart Phone Portrait >>>>>>>>>>>>*/
 
-header{
+header {
   height: 60px;
 }
 
@@ -75,10 +73,11 @@ header{
 }
 
 label {
-  font-size: 3em;;
+  font-size: 3em;
+  
 }
 
-nav ul{
+nav ul {
   list-style: none;
   background-color: #343538;
   height: 100vh;
@@ -89,38 +88,37 @@ nav ul{
   transition: all 0.5s;
 }
 
-#check:checked ~ul{
+#check:checked~ul {
   right: 0;
 }
 
-nav ul li{
+nav ul li {
   padding: 20px;
   border-bottom: 1px solid #a9a9a9;
 }
 
-nav ul li a{
+nav ul li a {
   text-align: none;
-  color:#fff;
+  color: #fff;
 }
 
 /* Destaque - banner */
-main{
-  
+main {
+
   height: 75vh;
   /* a imagem do banner ocupou todo fundo, por isso a cor do fundo não aparece */
   background: url(img/banner.jpg);
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-  text-align: center;
-  border: #a9a9a9;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
 }
+main h1 {
 
-main h1{
-  
   font-size: 2.5em;
 }
 
@@ -133,16 +131,18 @@ main h2 {
 
 /*Smart Phone Landscape*/
 
-@media (min-width: 576px){
-  body{
+@media (min-width: 576px) {
+  body {
     background-color: #0ff;
   }
+
   .Container {
     max-width: 540px;
   }
 
     /* Destaque */
-    main h1, main h2{
+    main h1,
+    main h2 {
       text-shadow: #000 0.05em 0.05em 0.05em;
     }
 }
@@ -152,57 +152,63 @@ main h2 {
   body {
     background-color: #ff0;
   }
+
   .Container {
     max-width: 720px;
   }
 
-  /* Destaque */
-  main{
-    height: 45vh;
-    
-  }
-  main h1{
-    font-size: 5.5em;
-  }
-  main h2{
-    font-size: 2.5em;
-  }
+    /* Destaque */
+    main {
+      height: 45vh;
+  
+    }
+  
+    main h1 {
+      font-size: 5.5em;
+    }
+  
+    main h2 {
+      font-size: 2.5em;
+    }
 
 }
 
 /*Tablet Landscape*/
-@media(min-width:992px){
-  body{
+@media(min-width:992px) {
+  body {
     background-color: orangered;
   }
+
   .Container {
     max-width: 960px;
   }
-    /* Destaque */
-    main{
-      height: 70vh;
-    }
+
+  /* Destaque */
+  main {
+    height: 70vh;
+  }
 }
 
 /*PC */
-@media(min-width:1200px){
-  body{background-color: #f00;
+@media(min-width:1200px) {
+  body {
+    background-color: #f00;
   }
-    .Container {
-      max-width: 1140px;
-    }
 
-    /* Cabeçalho */
+  .Container {
+    max-width: 1140px;
+  }
 
-    header {
-      height: 120px;
+  /* Cabeçalho */
 
-    }
+  header {
+    height: 120px;
 
-    #logo img {
-      width: 189px;
-      height: 189px;
-      margin: 30px;
-    }
+  }
+
+  #logo img {
+    width: 189px;
+    height: 189px;
+    margin: 30px;
+  }
 }
-
