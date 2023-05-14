@@ -25,13 +25,31 @@ body {
 /*Layout  */
 .Container {
   margin: 0 auto;
-  background-color: bisque;
+  border: 1px solid;
+  
+  border-color:  black;
+  
+  
+  
 }
 
 .Flex{
   display: flex;
   justify-content: space-between;
   background-color:  #a9a9a9;
+}
+
+/* Botão */
+.Botao {
+  text-decoration: none;
+  color:white;
+  font-size: 1.3em;
+  font-weight: 700;
+  background-color: #c00000;
+  padding:10px 40px;
+  border: 2px solid white;
+  border-radius: 25px;
+  
 }
 
 /* Ao topo do site */
@@ -85,6 +103,34 @@ nav ul li a{
   color:#fff;
 }
 
+/* Destaque - banner */
+main{
+  
+  height: 75vh;
+  /* a imagem do banner ocupou todo fundo, por isso a cor do fundo não aparece */
+  background: url(img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  text-align: center;
+  border: #a9a9a9;
+}
+
+main h1{
+  
+  font-size: 2.5em;
+}
+
+main h2 {
+
+  font-size: 1em;
+  margin: 20px 0px 50px 0px;
+
+}
+
 /*Smart Phone Landscape*/
 
 @media (min-width: 576px){
@@ -94,6 +140,11 @@ nav ul li a{
   .Container {
     max-width: 540px;
   }
+
+    /* Destaque */
+    main h1, main h2{
+      text-shadow: #000 0.05em 0.05em 0.05em;
+    }
 }
 
 /*Tablet Portrait*/
@@ -101,9 +152,22 @@ nav ul li a{
   body {
     background-color: #ff0;
   }
-    .Container {
-      max-width: 720px;
-    }
+  .Container {
+    max-width: 720px;
+  }
+
+  /* Destaque */
+  main{
+    height: 45vh;
+    
+  }
+  main h1{
+    font-size: 5.5em;
+  }
+  main h2{
+    font-size: 2.5em;
+  }
+
 }
 
 /*Tablet Landscape*/
@@ -111,8 +175,12 @@ nav ul li a{
   body{
     background-color: orangered;
   }
-    .Container {
-      max-width: 960px;
+  .Container {
+    max-width: 960px;
+  }
+    /* Destaque */
+    main{
+      height: 70vh;
     }
 }
 
