@@ -25,9 +25,9 @@ body {
 /*Layout  */
 .Container {
   margin: 0 auto;
-    border: 1px solid;
-    
-      border-color: black;
+  border: 1px solid;
+  
+  border-color: black;
 
 }
 
@@ -35,6 +35,11 @@ body {
   display: flex;
     justify-content: space-between;
     background-color: #a9a9a9;
+}
+
+.Flex2{
+  display: flex;
+  align-items:center;
 }
 
 /* Botão */
@@ -108,6 +113,8 @@ main {
   height: 75vh;
   /* a imagem do banner ocupou todo fundo, por isso a cor do fundo não aparece */
   background: url(img/banner.jpg);
+  border: 1px solid;
+
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -129,6 +136,34 @@ main h2 {
 
 }
 
+/* Sobre */
+#sobre{
+  padding: 50px 0;
+  background: url(img/background.png);
+  background-size: cover;
+  background-position: center;
+ 
+  border: 1px solid;
+  border-color: rgb(58, 41, 41);
+}
+#destaqueSobre{
+  display: none;
+}
+#textoSobre{
+  color:white;
+  padding: 0px 10px;
+}
+#textoSobre h2{
+  margin-bottom: 10px;
+}
+.TopicosSobre{
+  margin-top: 20px;
+  
+}
+ 
+.TopicosSobre img {
+  margin-right: 10px;
+}
 /*Smart Phone Landscape*/
 
 @media (min-width: 576px) {
@@ -136,15 +171,16 @@ main h2 {
     background-color: #0ff;
   }
 
+
   .Container {
     max-width: 540px;
   }
 
-    /* Destaque */
-    main h1,
-    main h2 {
-      text-shadow: #000 0.05em 0.05em 0.05em;
-    }
+  /* Destaque */
+  main h1,
+  main h2 {
+    text-shadow: #000 0.05em 0.05em 0.05em;
+  }
 }
 
 /*Tablet Portrait*/
